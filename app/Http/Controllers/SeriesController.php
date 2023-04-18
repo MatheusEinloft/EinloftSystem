@@ -8,9 +8,7 @@ class SeriesController
     {
         $series = [
             'The las of us',
-            'Game of Thrones',
-            'Mr Robot',
-            'Modern Family'
+            'Game of Thrones'
         ];
 
         $html = '<ul>';

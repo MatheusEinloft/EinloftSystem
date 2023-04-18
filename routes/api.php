@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// TODO: fazer se comunicar com a config.ini para que consiga alterar esse arquivo via interface
