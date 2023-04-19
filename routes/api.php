@@ -19,3 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 // TODO: fazer se comunicar com a config.ini para que consiga alterar esse arquivo via interface
+
+Route::get('/series', [SeriesController::class, 'listarSeries']);

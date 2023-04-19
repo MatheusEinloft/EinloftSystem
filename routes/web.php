@@ -18,4 +18,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/series', [SeriesController::class, 'listarSeries']);
+Route::get('/series',function(){
+    return [
+        'Game of thrones',
+        'Modern Family',
+        'Lost'
+    ];
+});
+
+Route::get('/api/series',function(){
+    return [
+        'Pagina da serie na api'
+    ];
+});
