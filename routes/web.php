@@ -18,13 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/series',function(){
-    return [
-        'Game of thrones',
-        'Modern Family',
-        'Lost'
-    ];
-});
+Route::get('/series', [SeriesController::class,'index']);
 
 Route::get('/api/series',function(){
     return [
