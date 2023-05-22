@@ -24,3 +24,4 @@ class SeriesController extends Controller
         return $html;
     }
 }
+//todo mostrar as series em formato de carrocel
